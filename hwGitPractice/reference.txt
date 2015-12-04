@@ -1,12 +1,12 @@
-config --global user.name/email 
-init
-clone
-add
-commit
-push
-pull
-status
-diff
-log
-reset HEAD filenam
-reset SHA
+config --global user.name/email: sets the username and email for the local config for git 
+init: makes a new repo
+clone: used to take in a repo from Git database
+add: adds files to staging area
+commit: stores the changes in a file to staging area
+push: moves changes onto Git database:
+pull: takes the latest update of a repo for local use
+status: displays the contents of repo to staging area
+diff: shows diff between repor and staging area
+log: displays changes in repo
+reset HEAD filename: unstages file changes in staging area
+reset SHA: resets to a previouls made commit, indicated by SHA
