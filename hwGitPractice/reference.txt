@@ -1,0 +1,12 @@
+config --global user.name/email 
+init
+clone
+add
+commit
+push
+pull
+status
+diff
+log
+reset HEAD filenam
+reset SHA
