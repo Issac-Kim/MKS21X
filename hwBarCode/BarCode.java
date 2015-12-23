@@ -30,6 +30,9 @@ public class BarCode implements Comparable{
 	}
 	return ans;
     }
+    public String getZip(){
+	return _zip;
+    }
     public String toString(){
 	int ans =  Integer.parseInt(_zip);
 	return "|" + BarCode.code[Integer.parseInt(_zip.substring(0, 1))]+  BarCode.code[Integer.parseInt(_zip.substring(1, 2))] +  BarCode.code[Integer.parseInt(_zip.substring(2, 3))] + BarCode.code[Integer.parseInt(_zip.substring(3, 4))] + BarCode.code[Integer.parseInt(_zip.substring(4, 5))] + BarCode.code[_checkDigit] + "|";
@@ -41,9 +44,6 @@ public class BarCode implements Comparable{
 	return false;
     }
     public int compareTo(Object other){
-	if(equals(other)){
-	    return 0;
-	}
-	return 1;
+	return this.toString().compareTo(other.toString());
     }
 }
